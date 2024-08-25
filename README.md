@@ -1,12 +1,9 @@
 # To-do
-- 
-- Get the icon and put it in the mermaid chart.
+- Shelver.
+- Pull-up bar.
 
 # About
 Hello, this is a web application using Vite, React, Mermaid, and Bootstrap that keeps track of work instructions for basic DIY fabrication projects.
-
-# Tutorial
-- https://youtu.be/SqcY0GlETPk?t=1644
 
 
 # Setup
@@ -24,5 +21,5 @@ $ npm i mermaid # added 101 packages, audited 367, 132 looking for funding.
 
 
 # History
-✅ Try to drag mermaid into this.
-✅ Determine if an svg icon can be used inside a mermaid node.
+- ✅ Try to drag mermaid into this.
+- ✅ Determine if an svg icon can be used inside a mermaid node.
