@@ -1,15 +1,28 @@
+# To-do
+- 
+- Get the icon and put it in the mermaid chart.
 
-<details><summary>wood-work work-flowk</summary>
+# About
+Hello, this is a web application using Vite, React, Mermaid, and Bootstrap that keeps track of work instructions for basic DIY fabrication projects.
 
-``` mermaid
-      flowchart LR;
-      chop([chop]) --> drill([drill]);
-      drill --> route([route<br/>sand]);
-      route --> dye([food dye]);
-      dye --> oil([mineral oil]);
-      oil --> assemble([assemble]);
-      class chop,drill,route,dye,oil,assemble cssClass;
-      classDef cssClass fill:black,stroke:aqua;
+# Tutorial
+- https://youtu.be/SqcY0GlETPk?t=1644
+
+
+# Setup
+``` bash
+$ npm create vite@latest # Creates a scaffolded Vite project 🤔
+$ cd vite-project # Navigate into the folder.
+$ npm i # Install all dependencies ❔
+$ npm run dev # Run dev and check localhost.
+$ npm i bootstrap
+$ npm i mermaid # added 101 packages, audited 367, 132 looking for funding.
 ```
 
-</details>
+-  and installs all dependencies ❔ 
+- Install 3rd parties (Bootstrap or Tailwind, Mermaid.)
+
+
+# History
+✅ Try to drag mermaid into this.
+✅ Determine if an svg icon can be used inside a mermaid node.
