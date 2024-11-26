@@ -1,34 +1,28 @@
-# Projects
-- Shelver
-- Pull-up bar
-- Welding
-
-# Software
-
-# About
-This is a web application using Vite, React, Mermaid, and Bootstrap that keeps track of work instructions for DIY fabrication projects.
+# DB setup
+``` sql
+select version(); -- Display version
+create database mydb; -- Creates db
+drop database mydb; -- Deletes the db
+CREATE TABLE fasteners (name varchar(25),qty int);
+insert into fasteners values ('1/4-20 HH 3.5"', 75);
 
 
-# Setup
-``` ruby
-$ npm create vite@latest # Creates a scaffolded Vite project 🤔 added 366 packages, and audited 367 packages in 16s, 132 packages are looking for funding)
-$ cd vite-project # Navigate into the folder.
-$ npm i # Installs all dependencies ❔
-$ npm run dev # Run dev and check localhost.
-$ npm i bootstrap
-$ npm i mermaid # added 101 packages, audited 367, 132 looking for funding.
+
+
+\h -- Display help
+\l -- Display list of databases
+\q -- Quit psql
+
+```
+# Queries
+``` sql
+select * from fasteners; -- Displays all entries
+select * from fasteners where qty > 50 AND name = '1/4-20 HH 3.5"';
+select * from fasteners order by name, qty;
+select distinct name from fasteners;
 ```
 
--  and installs all dependencies ❔ 
-- Install 3rd parties (Bootstrap or Tailwind, Mermaid.)
+CREATE TABLE fasteners (name varchar(25),qty int);
 
-# Questions
-- What does vite.config.js do ?
-- What do the package and -lock json files do ?
-- what does eslint.config.js do ?
-- What is the difference between npm create vite and npm i vite ?
-- What does npm run dev do ?
-
-# History
-- ✅ Try to drag mermaid into this.
-- ✅ Determine if an svg icon can be used inside a mermaid node.
+# Bumps
+- First column needs to be called "name"
