@@ -1,56 +1,40 @@
-# TOC
-- Setup
-- Notes
 
-# 
-``` shell
-npm create vite # React, JS
-npm i bootstrap mermaid pg
-npm i --save-dev sass
-mkdir {src/js,src/scss}
-```
 
-- Add to /scss
-``` css
-@import "bootstrap/scss/bootstrap";
-```
+# todo
+- Inventory database, all fasteners, building materials, electrical components, wire.
 
-- Add to main.jsx
-``` js
-import '../scss/styles.scss'
-import * as bootstrap from 'bootstrap' // Then move to importing individual components as used.
-```
+- Fabrication WI's with .svg figures, Mermaid charts, linked to inventory.
 
-# DB setup
+- An AI chatbot avatar with an informative sense of dark humor.
 
-``` sql
-select version(); -- Display version
-create database mydb; -- Creates db
-drop database mydb; -- Deletes the db
-CREATE TABLE fasteners (name varchar(25),qty int);
-insert into fasteners values ('1/4-20 HH 3.5"', 75);
-\h -- Display help
-\l -- Display list of databases
-\q -- Quit psql
-```
+- Stylized with Tailwind.
 
-# Queries
-
-- PG library required for connection.
-
-``` sql
-select * from fasteners; -- Displays all entries
-select * from fasteners where qty > 50 AND name = '1/4-20 HH 3.5"';
-select * from fasteners order by name, qty;
-select distinct name from fasteners;
-```
+-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
 
 # Notes
+- The "title" html attribute is the text that appears when the thing is hovered over.
 
-## PostgresQL
-- First column of a new table needs to be called "name" 🤔
+# Setup
 
-## Web
-- Errors for browser compatibilities.
-- Takes a few seconds to npm run dev.
-- Try react-bootstrap if problems come up.
+- Create two folders, one for front-end and one for backend
+
+``` shell
+npm create vite # React
+cd vite-project
+npm i
+```
+
+- Change .gitignore to
+
+```
+node_modules
+package-lock.json
+public
+```
+
+- Outside this folder create another folder
+
+``` shell
+npm i express pg
+```
+- good luck 😭

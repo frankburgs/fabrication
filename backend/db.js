@@ -19,3 +19,15 @@ client.query("select * from fasteners", (err, res) =>{
     }
     client.end;
 })
+
+client.query("INSERT INTO fasteners VALUES ('cheese', 75)", (err, res) =>{
+    if(!err){
+        console.log(res.rows);
+    }
+    else{
+        console.log(err.message);
+    }
+    client.end;
+})
+
+module.exports = client;
