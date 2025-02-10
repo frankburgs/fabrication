@@ -1,3 +1,4 @@
 node_modules
+dist
+practice.html 
 package-lock.json
-public
